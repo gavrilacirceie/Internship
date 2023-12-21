@@ -1,0 +1,75 @@
+Problem 2:
+
+1. Logical Design + Algorithm implementation
+- Pentru a stoca intrebarile am folosit un fisier JSON unde am 50 de intrebari din diverse domenii
+  (DevOps, Kubernetes, SQL, Linux)
+  - In fisierul JSON am urmatoarele 
+    "question" - este intrebarea pe care am pus-o
+    "answers"  - este o lista de raspunsuri care are "text" - unde se afla un posibil raspuns la intrebare si mai am cheia "correct" care indica daca raspunsul asociat este adevarat sau fals, am folosit un boolean pentru a indica raspunsul(true/false)
+
+- Pentru design am facut o interfata web folosind HTML, CSS si JavaScript
+    Interfata este una simpla si intuitiva pentru utilizator, astfel incat atunci cand deschidem interfata web, avem prezentat numele aplicatiei "Online Quiz System" si mai jos este intrebarea propriu zisa cu variantele de raspuns. In cazul in care am ales o varianta gresita de raspuns acea varianta se face rosie(indicand ca este gresita) si se face highlight cu verde la varianta corecta de raspuns(find intuitiv pentru a invata pe viitor), la finalul quiz-ului primim punctajul pe care l-am facut.
+
+- Pentru algoritmul de shuffle am folosit algoritmul de shuffle Fisher-Yates
+Pasii pentru acest algoritm sunt urmatorii
+    - initializam lista pe care o avem
+    - parcurgem lista de la final la inceput
+    - pentru fiecare element generam un index aleatoriu intre pozitia curenta si prima pozitie, pe urma interschimbam elementul curent cu elementul de la indexul generat aleatoriu
+    - la final avem lista amestecata
+
+Pseudocod: 
+    n = lungimea listei
+    for i from n - 1 to 1 do
+        j <- random integer astfel incat 0 <= j <= i
+        exchange a[j] and a[i]
+    end for
+
+2. Class and Database representation
+
+- Pentru reprezentare as folosi urmatoarele clase
+    - Question class cu urmatoarele atribute
+        - questionId - id pentru fiecare intrebare
+        - questionText - text-ul intrebarii 
+        - ca metode as avea gettere pentru a prelua si actualiza valorile in afara clasei
+    - Answer class cu urmatoarele atribute
+        - answerId - id pentru fiecare raspuns
+        - answerText - text pentru fiecare raspuns
+        - isCorrect - un boolean indicand care dintre raspunsuri e adevarat sau fals
+    - Quiz class cu urmatoarele
+        - quizId
+        - questions - lista de intrebari
+    - UserProgress cu urmatoarele atribute
+        - userId - id pentru fiecare user
+        - quizId - id pentru fiecare quiz il da user-ul
+        - userAnswers - un dictionar care mapeaza questionId la choiceId
+        - score - scorul pe care il are user-ul
+
+- Database schema
+    - Question table:
+        - questionId - PK
+        - questionText
+    - Answers table:
+        - answerId - PK
+        - questionId - FK (referencing to questions)
+        - answerText
+        - isCorrect
+    - Quizz table:
+        - quizId - PK
+    - UserProgress table:
+        - userId - PK
+        - quizId - FK (referencing to quizzes)
+        - questionId - FK (referencing to questions)
+        - selectedAnswerId - FK (referencing Answers)
+        - score
+- Relatii intre tabele
+    One to many intre Questions si Answers (fiecare intrebare poate avea mai multe alegeri)
+    Many to many intre Quizz si Questions (fiecare quiz poate avea mai multe intrebari)
+    One to many intre Question si UserProgress (la fiecare intrebare pot raspunde diferiti useri)
+    Many to one intre UserProgress si Quizz (fiecare userProgres este asociat cu un quiz)
+
+- The flow data during the quiz
+    - user-ul incepe quiz-ul (se creeaza o intrare in UserProgress table in care asociem userId si quizId)
+    - se preiau datele din Quizz si Questions table
+    - user-ul alege un raspuns si se salveza in UserProgress
+    - se face un calcul al scorului
+    - se afiseaza scorul pe care user-ul il face

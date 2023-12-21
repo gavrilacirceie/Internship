@@ -1,0 +1,455 @@
+[
+    {
+        "question": "What is inode?",
+        "answers": [
+            {"text": "A file is given a unique number by OS and is called as inode.", "correct": true},
+            {"text": "A directory is given a unique number by OS and is called as inode.", "correct": false},
+            {"text": "A file is given a predefined number by OS and is called as inode.", "correct": false},
+            {"text": "A directory is given a predefined number by OS and is called as inode.", "correct": false}
+        ]
+    },
+    {
+        "question": "What are categories in WordPress?",
+        "answers": [
+            {"text": "Categories allow a user to divide its content into different sections.", "correct": true},
+            {"text": "Categories allow a user to merge its content from different sections.", "correct": false},
+            {"text": "Categories allow a user to list out all the contents", "correct": false},
+            {"text": "Dont know", "correct": false}
+        ]
+    },
+    {
+        "question": "Which of the following aligns media objects?",
+        "answers": [
+            {"text": "Media", "correct": false},
+            {"text": "Medibody", "correct": true},
+            {"text": "Mediobject", "correct": false},
+            {"text": "Medilist", "correct": false}
+        ]
+    },
+    {
+        "question": "In HTML, onblur and onfocus are:",
+        "answers": [
+            {"text": "Style attributes", "correct": false},
+            {"text": "HTML elements", "correct": false},
+            {"text": "Event attributes", "correct": true},
+            {"text": "Text styles", "correct": false}
+        ]
+    },
+    {
+        "question": "Choose the “correct” usage of ‘cd’ to move into the parent directory.",
+        "answers": [
+            {"text": "cd", "correct": false},
+            {"text": "cd ..", "correct": true},
+            {"text": "cd .", "correct": false},
+            {"text": "cd/", "correct": false}
+        ]
+    },
+    {
+        "question": "How can we end a session?",
+        "answers": [
+            {"text": "session_destroy();", "correct": true},
+            {"text": "session_close().", "correct": false},
+            {"text": "session_end().", "correct": false},
+            {"text": "session_write_end().", "correct": false}
+        ]
+    },
+    {
+        "question": "How do you create a new Docker image and store it on the local system?",
+        "answers": [
+            {"text": "docker add <container id> <username/imagename>", "correct": false},
+            {"text": "docker --commit <container id> <username/imagename>", "correct": false},
+            {"text": "docker commit <container id> <username/imagename>", "correct": true},
+            {"text": "Not mentioned above", "correct": false}
+        ]
+    },
+    {
+        "question": "Which of the following are Kubernetes installation tools? Select all answers that apply.",
+        "answers": [
+            {"text": "kops", "correct": true},
+            {"text": "corn", "correct": false},
+            {"text": "None of the mentioned", "correct": false},
+            {"text": "kub", "correct": false}
+        ]
+    },
+    {
+        "question": "The SQL keyword BETWEEN is used?",
+        "answers": [
+            {"text": "To Limit The Columns Displayed", "correct": false},
+            {"text": "None Of The Above", "correct": false},
+            {"text": "For Ranges", "correct": false},
+            {"text": "As A Wildcard", "correct": true}
+        ]
+    },
+    {
+        "question": "Which of the following is not a service in Kubernetes?",
+        "answers": [
+            {"text": "Cluster IP", "correct": false},
+            {"text": "Node port", "correct": false},
+            {"text": "Load Balancer", "correct": false},
+            {"text": "Container Proxy", "correct": true}
+        ]
+    },
+    {
+        "question": "Which is the currently accepted best practice method for hashing passwords to hash passwords?",
+        "answers": [
+            {"text": "bcrypt()", "correct": true},
+            {"text": "md5()", "correct": false},
+            {"text": "hash()", "correct": false},
+            {"text": "encode()", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the command line interface used to communicate with Kubernetes?",
+        "answers": [
+            {"text": "kubeapi", "correct": false},
+            {"text": "kubelet", "correct": false},
+            {"text": "k8sctl", "correct": false},
+            {"text": "kubectl", "correct": true}
+        ]
+    },
+    {
+        "question": "How to protect special characters in a query string?",
+        "answers": [
+            {"text": "urlencode()", "correct": true},
+            {"text": "url_encode()", "correct": false},
+            {"text": "urlbypass()", "correct": false},
+            {"text": "Not mentioned above", "correct": false}
+        ]
+    },
+    {
+        "question": "How to delete an image from the local storage system?",
+        "answers": [
+            {"text": "$ docker rmi <image-id>", "correct": true},
+            {"text": "$ docker --rmi <image-id>", "correct": false},
+            {"text": "$ docker rmin <imageid>", "correct": false},
+            {"text": "Not mentioned above", "correct": false}
+        ]
+    },
+    {
+        "question": "How to list pods sorted by Restart Count in Kubernetes?",
+        "answers": [
+            {"text": "kubectl get pods --sort-by='.status.restartCount'", "correct": false},
+            {"text": "kubectl get pods --sort='.status.containerStatuses[0].restartCount'", "correct": false},
+            {"text": "kubectl get pods by restartCount", "correct": false},
+            {"text": "kubectl get pods --sort-by='.status.containerStatuses[0].restartCount'", "correct": true}
+        ]
+    },
+    {
+        "question": "Which Process Validates And Configures Data For The Api Objects Like Pods, Services?",
+        "answers": [
+            {"text": "kube-apiserver process validates and configures data for the api objects.", "correct": true},
+            {"text": "kube-apiserver process validates and configures data for the gui objects.", "correct": false},
+            {"text": "kube-apiserver process validates and configures data for the cli objects.", "correct": false},
+            {"text": "Not mentioned above", "correct": false}
+        ]
+    },
+
+    {
+        "question": "Which program copies databases from one server to another?",
+        "answers": [
+            {"text": "Mysqlcopydb", "correct": false},
+            {"text": "Mysqldbflush", "correct": false},
+            {"text": "Mysqlflushdb", "correct": false},
+            {"text": "Mysqldbcopy", "correct": true}
+        ]
+    },
+    {
+        "question": "Which of the following keyword terminates the for loop or switch statement and transfers execution to the statement immediately following the for loop or switch?",
+        "answers": [
+            {"text": "break", "correct": true},
+            {"text": "continue", "correct": false},
+            {"text": "else", "correct": false},
+            {"text": "while", "correct": false}
+        ]
+    },
+    {
+        "question": "In which variable is the user's IP address stored?",
+        "answers": [
+            {"text": "$DOMAIN", "correct": false},
+            {"text": "$GLOBALS", "correct": false},
+            {"text": "$_ENV", "correct": false},
+            {"text": "$REMOTE_ADDR", "correct": true}
+        ]
+    },
+    {
+        "question": "Do deactivated plugins slow down a WordPress site?",
+        "answers": [
+            {"text": "Even deactivated plugins slow down your website", "correct": false},
+            {"text": "Deactivated do not plugins slow down your website", "correct": true},
+            {"text": "Deactivated plugins actually improve the speed of a WordPress site.", "correct": false},
+            {"text": "Deactivated plugins not only don't slow down a WordPress site, but they also enhance site speed.", "correct": false}
+        ]
+    },
+    {
+        "question": "What are Ansible ad-hoc commands?",
+        "answers": [
+            {"text": "Ansible ad-hoc commands are commands which help you execute simple tasks without the need of creating playbooks", "correct": true},
+            {"text": "Ansible ad-hoc commands are also known as Ansible playbooks", "correct": false},
+            {"text": "Ansible ad-hoc commands are complex and reserved for advanced users.", "correct": false},
+            {"text": "Ansible ad-hoc commands are a deprecated feature in Ansible, and users are encouraged to avoid using them", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the option to create a hard link for a directory?",
+        "answers": [
+            {"text": "-s", "correct": false},
+            {"text": "-l", "correct": false},
+            {"text": "-f", "correct": false},
+            {"text": "None of the above", "correct": true}
+        ]
+    },
+    {
+        "question": "You are logged in as a normal user and you see a file with 444(-r--r--r--) permission. Can you delete it with the `rm` command?",
+        "answers": [
+            {"text": "We can't be certain, it depends on the permissions of the parent folder", "correct": false},
+            {"text": "Yes, can delete it without a problem", "correct": false},
+            {"text": "No, we don't have the proper permissions", "correct": false},
+            {"text": "We can delete it only from the GUI but not from CLI.", "correct": true}
+        ]
+    },
+    {
+        "question": "What is called if a value shouldn't be greater than 100?",
+        "answers": [
+            {"text": "Integrity constraint", "correct": true},
+            {"text": "Feasible constraint", "correct": false},
+            {"text": "Over-defined constraint", "correct": false},
+            {"text": "Referential constraint", "correct": false}
+        ]
+    },
+    {
+        "question": "What Is The Role Of Kube-scheduler?",
+        "answers": [
+            {"text": "kube-scheduler is responsible for assigning a port to newly created pods.", "correct": false},
+            {"text": "kube-scheduler is responsible for assigning a node to old created pods.", "correct": false},
+            {"text": "kube-scheduler is responsible for assigning a cluster to newly created pods.", "correct": false},
+            {"text": "kube-scheduler is responsible for discovering the newly created pod and selects an optimal node for them to run on", "correct": true}
+        ]
+    },
+    {
+        "question": "In which version of PHP E_STRICT Error level is introduced?",
+        "answers": [
+            {"text": "PHP 4", "correct": false},
+            {"text": "PHP 7", "correct": false},
+            {"text": "PHP 5.2", "correct": false},
+            {"text": "PHP 5", "correct": true}
+        ]
+    },
+    {
+        "question": "Which of the following attribute is used to group elements?",
+        "answers": [
+            {"text": "item", "correct": true},
+            {"text": "itemgroup", "correct": false},
+            {"text": "itemcheck", "correct": false},
+            {"text": "itemprop", "correct": false}
+        ]
+    },
+    {
+        "question": "Which of the following will raise MySQL's version of an error?",
+        "answers": [
+            {"text": "SIGNAL", "correct": true},
+            {"text": "RAISE", "correct": false},
+            {"text": "ERROR", "correct": false},
+            {"text": "None of these", "correct": false}
+        ]
+    },
+
+    {
+        "question": "How to dump pod logs, with label name=myLabel (stdout) in Kubernetes",
+        "answers": [
+            {"text": "kubectl log name=myLabel", "correct": false},
+            {"text": "kubectl pod -l name=myLabel", "correct": false},
+            {"text": "kubectl logs -l name=myLabel", "correct": false},
+            {"text": "kubectl logs -l .name[*]=myLabel", "correct": true}
+        ]
+    },
+    {
+        "question": "Which of the following is NOT a valid PHP comparison operator?",
+        "answers": [
+            {"text": "<=>", "correct": false},
+            {"text": ">=", "correct": false},
+            {"text": "<>", "correct": false},
+            {"text": ">==", "correct": true}
+        ]
+    },
+    {
+        "question": "Which attribute sets the text direction as related to lang attribute.",
+        "answers": [
+            {"text": "Sub",  "correct": false},
+            {"text": "Dir", "correct": false},
+            {"text": "Ds", "correct": false},
+            {"text": "Lang", "correct": true}
+        ]
+    },
+    {
+        "question": "__________ is the XML equivalent to strict HTML 4.01.",
+        "answers": [
+            {"text": "XHTML 1.0 Frameset",  "correct": false},
+            {"text": "XHTML 1.0 Transitional",  "correct": false},
+            {"text": "XHTML 1.0 Strict",  "correct": true},
+            {"text": "None Of The Mentioned",  "correct": false}
+        ]
+    },
+    {
+        "question": "What is the output of the command ‘umask –S’?",
+        "answers": [
+            {"text": "Shows mask value using symbolic notion.", "correct": true},
+            {"text": "Shows mask value using octal values.", "correct": false},
+            {"text": "Removes the current mask value.", "correct": false},
+            {"text": "Sets new mask value.", "correct": false}
+        ]
+    },
+    {
+        "question": "What does the /etc/hosts file contain?",
+        "answers": [
+            {"text": "Hostnames of all devices on the network segment", "correct": false},
+            {"text": "The IP address of the default gateway", "correct": false},
+            {"text": "CPU and memory info", "correct": false},
+            {"text": "IP addresses to hostnames mappings", "correct": true}
+        ]
+    },
+    {
+        "question": "How can we access the data sent through the URL with the POST method?",
+        "answers": [
+            {"text": "$_POST[\"var\"];", "correct": true},
+            {"text": "$_REQUEST[\"var\"];", "correct": false},
+            {"text": "$_GET[\"var\"];", "correct": false},
+            {"text": "$_PUT[\"var\"];", "correct": false}
+        ]
+    },
+    {
+        "question": "Which function in PHP Returns a list of response headers sent (or ready to send)",
+        "answers": [
+            {"text": "header()", "correct": false},
+            {"text": "headers_list()", "correct": true},
+            {"text": "headers_list()", "correct": false},
+            {"text": "header_send()", "correct": false}
+        ]
+    },
+    {
+        "question": "The Kubernetes Network proxy runs on which node?",
+        "answers": [
+            {"text": "Master Node", "correct": false},
+            {"text": "Worker Node", "correct": false},
+            {"text": "All the nodes", "correct": true},
+            {"text": "None of the mentioned", "correct": false}
+        ]
+    },
+    {
+        "question": "How to stop a docker container immediately?",
+        "answers": [
+            {"text": "$ docker terminate", "correct": false},
+            {"text": "$ docker kill", "correct": true},
+            {"text": "$ docker stop", "correct": false},
+            {"text": "none of the above", "correct": false}
+        ]
+    },
+    {
+        "question": "Normalizations is...",
+        "answers": [
+            {"text": "concerned with the physical implementation of the database", "correct": true},
+            {"text": "a database design technique that encourages storing data in multiple  databases", "correct": false},
+            {"text": "a database design technique that eliminates relationships from a database", "correct": false},
+            {"text": "a database design technique used to minimize data redundancy and duplication", "correct": false}
+        ]
+    },
+    {
+        "question": "How can you pass a variable by reference?",
+        "answers": [
+            {"text": "$var1 = &$var2", "correct": true},
+            {"text": "$var1 == &$var2", "correct": false},
+            {"text": "$var1 === &$var2", "correct": false},
+            {"text": "not mentioned above", "correct": false}
+        ]
+    },
+    {
+        "question": "How does a FOR loop start?",
+        "answers": [
+            {"text": "for i = 1 to 5", "correct": false},
+            {"text": "for (i = 0; i <= 5; i++)", "correct": true},
+            {"text": "for (i <= 5; i++)", "correct": false},
+            {"text": "for (i = 0; i <= 5)", "correct": false}
+        ]
+    },
+    {
+        "question": "What are meta-tags?",
+        "answers": [
+            {"text": "Meta-tags are keywords and description used to display website or page information.", "correct": true},
+            {"text": "Meta-tags are codes and scripts used to display website or page information.", "correct": false},
+            {"text": "Meta-tags are special tags and function used to display website or page information.", "correct": false},
+            {"text": "Dont know", "correct": false}
+        ]
+    },
+
+    {
+        "question": "How can we pass the variable through the navigation between the pages?",
+        "answers": [
+            {"text": "using href link", "correct": false},
+            {"text": "using routings, headers or hidden form fields.", "correct": false},
+            {"text": "using sessions, cookies or hidden form fields.", "correct": true},
+            {"text": "Not mentioned above", "correct": false}
+        ]
+    },
+    {
+        "question": "Which of the following are Python test frameworks?",
+        "answers": [
+            {"text": "Google Test", "correct": false},
+            {"text": "Robot Framework", "correct": false},
+            {"text": "Pylint", "correct": false},
+            {"text": "PyUnit", "correct": true}
+        ]
+    },
+    {
+        "question": "Suppose you have 3 containers running and out of these, you wish to access one of them. How do you access a running container?",
+        "answers": [
+            {"text": "$ docker exec it <container id> bash", "correct": false},
+            {"text": "$ docker exec --it <container id>", "correct": false},
+            {"text": "$ docker exec -it <container id> bash", "correct": true},
+            {"text": "Not mentioned above", "correct": false}
+        ]
+    },
+    {
+        "question": "Which operator is used to check if two values are equal and of the same data type?",
+        "answers": [
+            {"text": "==", "correct": false},
+            {"text": "=", "correct": false},
+            {"text": "===", "correct": true},
+            {"text": "!=", "correct": false}
+        ]
+    },
+    {
+        "question": "How can you monitor Docker in production?",
+        "answers": [
+            {"text": "You can use Docker tools such as Docker pin and docker file for monitoring", "correct": false},
+            {"text": "You can use Docker tools such as Docker logs and docker plugins for monitoring", "correct": false},
+            {"text": "You can use Docker tools such as Docker events and docker stats for monitoring", "correct": true},
+            {"text": "what is docker?:)", "correct": false}
+        ]
+    },
+    {
+        "question": "Kubernetes cluster data is stored in which of the following?",
+        "answers": [
+            {"text": "Kube-apiserver", "correct": false},
+            {"text": "Kubelet", "correct": false},
+            {"text": "Etcd", "correct": true},
+            {"text": "None of the above", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the name of the first page you encounter after logging into your web page?",
+        "answers": [
+            {"text": "Dashboard", "correct": true},
+            {"text": "Security question page", "correct": false},
+            {"text": "WP upgrade option", "correct": false},
+            {"text": "WPAdmin", "correct": false}
+        ]
+    },
+    {
+        "question": "What language is an Ansible playbook are written in by default?",
+        "answers": [
+            {"text": "YAML format", "correct": true},
+            {"text": "JSON format", "correct": false},
+            {"text": "XML format", "correct": false},
+            {"text": "HTML format", "correct": false}
+        ]
+    }
+]
